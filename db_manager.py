@@ -19,7 +19,7 @@ class DBManager:
         rows = None
         try:
             self.cur.execute(
-                "SELECT * FROM usertable ORDER BY sensorid")
+                "SELECT * FROM usertable ORDER BY userid")
             rows = self.cur.fetchall()
         except Exception as e:
             print("get_users ERROR: " + str(e))
