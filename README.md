@@ -35,6 +35,6 @@ All columns
 To create trigger run:
 
 ```
-python gen-triggers.py .\sample.triggers.json | psql -h localhost -p 5432 -U postgres -d 12345678 --single-transaction --
+python gen-triggers.py .\column_trigger.json | psql -h localhost -p 5432 -U postgres -d 12345678 --single-transaction --
 
 ```
